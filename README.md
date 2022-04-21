@@ -1,3 +1,3 @@
 # Шаблонизатор Summary Forms
 
-[DEMO](https://templater-one.vercel.app)
+[DEMO](http://templater-tau.vercel.app/)
