@@ -84,8 +84,9 @@ const CopyMarkdown = ({
         `#Problem` +
         `\nТема - ${problem}` +
         `\nКонтур - ${standBot}` +
-        `\nОписание - ${isNotes}` +
-        `\nВремя начала инцидента - ${botTime}, ${hoursStartDate}:${minutesStartDate}`
+        `\nВремя начала инцидента - ${botTime}, ${hoursStartDate}:${minutesStartDate}` +
+        `\nОписание - ${isNotes}`
+        
     )
 
     const strOpening = (
