@@ -20,6 +20,10 @@ const DataForItem = {
             value: 'Все ТГ, кроме Фарма',
         },
         {
+            label: '-',
+            value: '-'
+        },
+        {
             label: 'Не определено',
             value: 'Не определено'
         },
