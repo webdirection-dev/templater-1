@@ -1,21 +1,11 @@
 import './alert.css'
 
-const Alert = (props) => {
-
-    const {
-        isAlert = false
-    } = props
-
-    let classesForShowAlert = 'hide'
-    if (isAlert) classesForShowAlert = 'main__alert'
-
-    return(
-        <div id="toast-container" className={classesForShowAlert}>
-            <div className="toast">
-                Скопировано в буфер!
-            </div>
+const Alert = ({isAlert}) => (
+    <div id="toast-container" className={isAlert ? 'main__alert' : 'hide'}>
+        <div className="toast">
+            Скопировано в буфер!
         </div>
-    )
-}
+    </div>
+)
 
-export default Alert;
+export default Alert

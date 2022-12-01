@@ -1,79 +1,36 @@
-import {useEffect, useState} from "react";
+import './cardsList.css'
 
-import './cardsList.css';
-import CardItem from "../cardItem";
-import NotifyPerson from "../notifyPerson";
-import UpdateCard from "../updateCard";
-import Alert from "../alert";
+import OpeningSummary from '../../features/opening/OpeningSummary'
+import UpdateSummary from "../../features/update/UpdateSummary"
+import ClosingSummary from '../../features/closing/ClosingSummary'
+
+import Alert from '../alert/alert'
+import {useCardList} from './use-card-list'
+import Addons from '../addons/Addons'
 
 const CardsList = () => {
-    const [isAlert, setAlert] = useState(false)
-
-    const [isGetDataTime, setGetDataTime] = useState({})
-    const [isGetTimeStart, setGetTimeStart] = useState({})
-    const [isStartDay, setStartDay] = useState(false)
-
-    const toGetDataTime = (start) => {
-        setGetDataTime(start)
-    }
-
-    const toGetTimeStart = (start) => {
-        setGetTimeStart(start)
-    }
-
-    const toGetAlert = () => {
-        setAlert(true)
-    }
-
-    const closeAlert = () => {
-        setAlert(false)
-    }
-
-    // componentDidUpdate
-    // изчезновение алерта Скопировано в буфер
-    useEffect(() => {
-        const timerId = setTimeout(() => closeAlert(), 3000);
-
-        // componentDidUnmount
-        return () => clearTimeout(timerId)
-        // eslint-disable-next-line
-    }, [isAlert]);
+    const {setAlert, isAlert} = useCardList()
 
     return(
         <div className="summary-forms">
+            {/*Открытие*/}
             <div className="summary">
-                <CardItem
-                    toGetDataTime={toGetDataTime}
-                    toGetTimeStart={toGetTimeStart}
-                    getStartDay={(day => setStartDay(day))}
-
-                    toGetAlert={toGetAlert}
-                />
+                <OpeningSummary setAlert={setAlert} />
             </div>
 
             <div className="summary summary__helpers">
-                <UpdateCard toGetAlert={toGetAlert}/>
-
-                <NotifyPerson toGetAlert={toGetAlert}/>
+                <UpdateSummary setAlert={setAlert}/>
+                <Addons setAlert={setAlert}/>
             </div>
 
             {/*Закрытие*/}
             <div className="summary">
-                <CardItem
-                    flagOpening={false}
-                    toGetAlert={toGetAlert}
-
-                    isGetTimeStart={isGetTimeStart}
-                    isGetDataTime={isGetDataTime}
-                    isStartDay={isStartDay}
-                />
+                <ClosingSummary setAlert={setAlert}/>
             </div>
 
-            <Alert
-                isAlert={isAlert}
-            />
+            <Alert isAlert={isAlert} />
         </div>
     )
-};
+}
 
-export default CardsList;
+export default CardsList

@@ -1,0 +1,39 @@
+.addon-panel {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    padding: 7px;
+    z-index: 999;
+}
+
+.addon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #79dcd2;
+    font-size: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.addon-btn:hover {
+    transform: scale(1.1);
+}
+
+.staff-btn {
+    color: #8F1C13;
+    background-color: #ED6A5E;
+}
+
+.mi-btn {
+    color: #A87329;;
+    background-color: #F5BF4F;
+}

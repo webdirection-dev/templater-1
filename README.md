@@ -1,3 +1,4 @@
+# DEV
 # Шаблонизатор Саммари формы
 
-[DEMO](http://templater-tau.vercel.app/)
+[DEMO](https://templater-dev.vercel.app)

@@ -9,12 +9,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.hide {
-  display: none;
-}
+#nums_1 {padding:100px}
 
 .content {
-  min-height: calc(100vh - 64px - 94px - 65px + 1px);
   padding: 1.5rem 0;
   width: 100% !important;
   max-width: 98% !important;
@@ -137,6 +134,15 @@ body {
   background-color: #26a69a !important;font-weight: bold !important;
 }
 
+.card {
+  margin: 0 !important;
+  transition: all .25s !important;
+}
+
+.card-title {
+  margin-bottom: 0 !important;
+}
+
 .main__btn-showTable {
   display: block;
   margin: 0 auto;
@@ -224,6 +230,62 @@ body {
   left: -10px;
   top: 0;
 }
+
+.react-datepicker-popper {
+  z-index: 10000 !important;
+}
+
+/*Библиотека react-select*/
+.select-react {
+  width: 100%;
+}
+
+.css-319lph-ValueContainer {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.css-6j8wv5-Input {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.css-26l3qy-menu {
+  z-index: 2000 !important;
+}
+
+.material-icons {
+  cursor: pointer;
+}
+
+/*materializeCSS*/
+[type="checkbox"].filled-in:not(:checked) + span:not(.lever)::after {
+  border: 1px solid white !important;
+}
+
+[type="checkbox"]+span:not(.lever) {
+  line-height: normal !important;
+}
+
+.hide {
+  display: none;
+}
+
+.card-opacity {
+  animation: card-opacity .4s ease-in-out both;
+}
+
+@keyframes card-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 
 

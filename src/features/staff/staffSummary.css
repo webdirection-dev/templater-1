@@ -1,0 +1,8 @@
+.staff-title {
+    margin: 0 auto 8px;
+}
+
+.staff-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

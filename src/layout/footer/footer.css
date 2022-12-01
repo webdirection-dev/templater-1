@@ -1,0 +1,15 @@
+.footer-content {
+    height: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 !important;
+}
+
+.footer-left {
+    display: flex;
+}
+
+.footer-left > div {
+    margin-left: 70px;
+}
