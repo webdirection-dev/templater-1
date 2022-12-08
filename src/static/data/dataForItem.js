@@ -157,8 +157,8 @@ const DataForItem = {
             value: 'ДЕМО'
         },
         {
-            label: 'Прод + Демо',
-            value: 'ПРОД+ДЕМО'
+            label: 'Демо + Прод',
+            value: 'ДЕМО + ПРОД'
         },
     ],
 };
