@@ -16,7 +16,7 @@ const StaffSummary = ({setAlert, start, staff}) => {
             <div className="card-content white-text summary-head">
 
                 <div className="summary__checkbox-content">
-                    <span className="card-title staff-title">ШТАБ</span>
+                    <span className="card-title staff-title">FYI с пином + инцидент</span>
                 </div>
             </div>
 
