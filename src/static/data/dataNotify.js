@@ -1,9 +1,9 @@
 export const staffPerson = [
     { name: 'markov', fullName: 'Василий М.', userName: '@haltandcatchfire91', selected: true, },
     { name: 'zalygin', fullName: 'Михаил З.', userName: '@mishanyazal', selected: true, },
-    { name: 'balamutin', fullName: 'Анатолий Б.', userName: '@dezm0d', selected: true, },
+    { name: 'balamutin', fullName: 'Анатолий Б.', userName: '@dezm0d', selected: false, },
     { name: 'davtyan', fullName: 'Виктор Д.', userName: '@crpt_davtyan', selected: true, },
-    { name: 'suprun', fullName: 'Иван С.', userName: '@lacronn', selected: true, },
+    { name: 'suprun', fullName: 'Иван С.', userName: '@lacronn', selected: false, },
 ]
 
 export const dataNotify = {
