@@ -3,7 +3,7 @@ export const staffPerson = [
     { name: 'zalygin', fullName: 'Михаил З.', userName: '@mishanyazal', selected: true, },
     { name: 'balamutin', fullName: 'Анатолий Б.', userName: '@dezm0d', selected: false, },
     { name: 'davtyan', fullName: 'Виктор Д.', userName: '@crpt_davtyan', selected: true, },
-    { name: 'suprun', fullName: 'Иван С.', userName: '@lacronn', selected: false, },
+    { name: 'suprun', fullName: 'Иван С.', userName: '@lacronn', selected: true, },
 ]
 
 export const dataNotify = {
