@@ -1,5 +1,5 @@
 export const staffPerson = [
-    { name: 'markov', fullName: 'Василий М.', userName: '@haltandcatchfire91', selected: true, },
+    { name: 'markov', fullName: 'Василий М.', userName: '@haltandcatch', selected: true, },
     { name: 'meshkov', fullName: 'Александр М.', userName: '@okmeshkov', selected: true, },
     { name: 'zalygin', fullName: 'Михаил З.', userName: '@mishanyazal', selected: true, },
     { name: 'balamutin', fullName: 'Анатолий Б.', userName: '@dezm0d', selected: true, },
@@ -14,7 +14,7 @@ export const dataNotify = {
             selected: true,
             name: 'markov',
             fullName: 'Василий Марков',
-            userName: '@haltandcatchfire91'
+            userName: '@haltandcatch'
         },
         {
             alwaysSelected: true,
