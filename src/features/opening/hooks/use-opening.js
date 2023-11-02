@@ -26,13 +26,13 @@ export const useOpening = () => {
         if (name === 'problem') dispatch(setTitle(value))
 
         if (name === 'ops') {
-            if (value.length < 5) setPrimary(false)
-            if (value.length === 5) {
+            if (value.length < 6) setPrimary(false)
+            if (value.length === 6) {
                 setWarning(false)
                 setPrimary(true)
             }
 
-            if (value === '' || (Number(value) && value.length < 6)) dispatch(setJiraId(value))
+            if (value === '' || (Number(value) && value.length < 7)) dispatch(setJiraId(value))
         }
 
         if (name === 'admins') dispatch(setAdmins(value))

@@ -81,10 +81,10 @@ const OpeningSummary = ({setAlert}) => {
                             value={jiraId}
                             name='ops'
                             className={isPrimary ? 'form__input summary__ops-input summary__ops-input-colors' : 'form__input orange darken-1 summary__ops-input'}
-                            placeholder='00000'
+                            placeholder='000000'
                             type="text"
                             onChange={onWriteInput}
-                            onBlur={ e => e.target.value.length < 5 && setWarning(true) }
+                            onBlur={ e => e.target.value.length < 6 && setWarning(true) }
                         />
                     </div>
 
