@@ -114,9 +114,9 @@ body {
   padding: 3px 10px;
 }
 
-.txt-out__card:focus {
-  /*background-color: #e1f5fe !important;*/
-}
+/* .txt-out__card:focus {
+  background-color: #e1f5fe !important;
+} */
 
 .txt-out__helper .txt-out__card {
   max-width: 100% !important;
@@ -261,6 +261,10 @@ body {
 }
 
 /*materializeCSS*/
+.waves-effect { 
+  z-index: 0 !important;
+}
+
 [type="checkbox"].filled-in:not(:checked) + span:not(.lever)::after {
   border: 1px solid white !important;
 }
