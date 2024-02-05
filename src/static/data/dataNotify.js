@@ -3,7 +3,7 @@ export const staffPerson = [
     { name: 'meshkov', fullName: 'Александр М.', userName: '@okmeshkov', selected: true, },
     { name: 'zalygin', fullName: 'Михаил З.', userName: '@mishanyazal', selected: true, },
     { name: 'balamutin', fullName: 'Анатолий Б.', userName: '@dezm0d', selected: true, },
-    { name: 'davtyan', fullName: 'Виктор Д.', userName: '@crpt_davtyan', selected: true, },
+    { name: 'katukhov', fullName: 'Катухов И.', userName: '@crpt_katukhov', selected: true, },
     { name: 'suprun', fullName: 'Иван С.', userName: '@lacronn', selected: true, },
 ]
 
@@ -41,9 +41,9 @@ export const dataNotify = {
             alwaysSelected: false,
             selected: false,
             even: true,
-            name: 'davtyan',
-            fullName: 'Виктор Давтян',
-            userName: '@crpt_davtyan'
+            name: 'katukhov',
+            fullName: 'Илья Катухов',
+            userName: '@crpt_katukhov'
         },
         {
             alwaysSelected: false,
@@ -67,9 +67,9 @@ export const dataNotify = {
             alwaysSelected: false,
             selected: true,
             even: true,
-            name: 'davtyan',
-            fullName: 'Виктор Давтян',
-            userName: '@crpt_davtyan'
+            name: 'katukhov',
+            fullName: 'Илья Катухов',
+            userName: '@crpt_katukhov'
         },
         {
             alwaysSelected: false,

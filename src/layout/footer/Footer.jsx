@@ -3,7 +3,7 @@ import './footer.css'
 const Footer = () => (
     <footer id='footer' className="page-footer blue-grey darken-4 footer-content">
         <div className="footer-left">
-            <div>Чётные дни: Виктор Давтян</div>
+            <div>Чётные дни: Илья Катухов</div>
             <div>Нечётные дни: Иван Супрун</div>
         </div>
 
