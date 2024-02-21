@@ -1,10 +1,11 @@
 export const staffPerson = [
     /*{ name: 'markov', fullName: 'Василий М.', userName: '@haltandcatch', selected: true, },*/
-    { name: 'meshkov', fullName: 'Александр М.', userName: '@okmeshkov', selected: true, },
-    { name: 'zalygin', fullName: 'Михаил З.', userName: '@mishanyazal', selected: true, },
-    { name: 'balamutin', fullName: 'Анатолий Б.', userName: '@dezm0d', selected: true, },
-    { name: 'katukhov', fullName: 'Катухов И.', userName: '@crpt_katukhov', selected: true, },
-    { name: 'suprun', fullName: 'Иван С.', userName: '@lacronn', selected: true, },
+    { name: 'meshkov', fullName: 'Александр Мешков', userName: '@okmeshkov', selected: true, },
+    { name: 'zalygin', fullName: 'Михаил Залыгин', userName: '@mishanyazal', selected: true, },
+    { name: 'balamutin', fullName: 'Анатолий Баламутин', userName: '@dezm0d', selected: true, },
+    { name: 'katukhov', fullName: 'Илья Катухов', userName: '@crpt_katukhov', selected: true, },
+    /*{ name: 'suprun', fullName: 'Иван С.', userName: '@lacronn', selected: true, },*/
+    { name: 'vorobiev', fullName: 'Павел Воробьёв', userName: '@crpt_vorobiev', selected: true, },
 ]
 
 export const dataNotify = {
@@ -45,13 +46,21 @@ export const dataNotify = {
             fullName: 'Илья Катухов',
             userName: '@crpt_katukhov'
         },
-        {
+        /*{
             alwaysSelected: false,
             selected: false,
             even: false,
             name: 'suprun',
             fullName: 'Иван Супрун',
             userName: '@lacronn'
+        },*/
+        {
+            alwaysSelected: false,
+            selected: false,
+            even: false,
+            name: 'suprun',
+            fullName: 'Павел Воробьёв',
+            userName: '@crpt_vorobiev'
         },
     ],
 
@@ -71,13 +80,21 @@ export const dataNotify = {
             fullName: 'Илья Катухов',
             userName: '@crpt_katukhov'
         },
-        {
+        /*{
             alwaysSelected: false,
             selected: true,
             even: false,
             name: 'suprun',
             fullName: 'Иван Супрун',
             userName: '@lacronn'
+        },*/
+        {
+            alwaysSelected: false,
+            selected: true,
+            even: false,
+            name: 'suprun',
+            fullName: 'Павел Воробьёв',
+            userName: '@crpt_vorobiev'
         },
     ],
 }
