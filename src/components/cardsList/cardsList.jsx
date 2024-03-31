@@ -5,13 +5,13 @@ import UpdateSummary from "../../features/update/UpdateSummary"
 import ClosingSummary from '../../features/closing/ClosingSummary'
 
 import Alert from '../alert/alert'
-import {useCardList} from './use-card-list'
+import { useCardList } from './use-card-list'
 import Addons from '../addons/Addons'
 
 const CardsList = () => {
-    const {setAlert, isAlert} = useCardList()
+    const { setAlert, isAlert } = useCardList()
 
-    return(
+    return (
         <div className="summary-forms">
             {/*Открытие*/}
             <div className="summary">
@@ -19,13 +19,13 @@ const CardsList = () => {
             </div>
 
             <div className="summary summary__helpers">
-                <UpdateSummary setAlert={setAlert}/>
-                <Addons setAlert={setAlert}/>
+                <UpdateSummary setAlert={setAlert} />
+                <Addons setAlert={setAlert} />
             </div>
 
             {/*Закрытие*/}
             <div className="summary">
-                <ClosingSummary setAlert={setAlert}/>
+                <ClosingSummary setAlert={setAlert} />
             </div>
 
             <Alert isAlert={isAlert} />

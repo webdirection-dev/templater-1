@@ -1,14 +1,20 @@
-import {useSelector} from 'react-redux'
-import {selectStaffInfo} from './staff-slice'
+import { useSelector, useDispatch } from 'react-redux'
+import { selectStaffInfo, setTitle } from './staff-slice'
 import './staffSummary.css'
 import StaffItem from './StaffItem'
-import {useCopyStaff} from './use-copy-staff'
+import { useCopyStaff } from './use-copy-staff'
+import TextareaAutosize from 'react-textarea-autosize'
 
-const StaffSummary = ({setAlert, start, staff}) => {
-    const {staffPerson} = useSelector(store => selectStaffInfo(store).data)
-    const {copySummary} = useCopyStaff(staffPerson)
+const StaffSummary = ({ setAlert, start, staff }) => {
+    const dispatch = useDispatch()
+    const { staffPerson, title } = useSelector(store => selectStaffInfo(store).data)
+    const { copySummary } = useCopyStaff(staffPerson)
 
-    return(
+    const handelChange = (e) => {
+        dispatch(setTitle(e.target.value))
+    }
+
+    return (
         <div
             id='staff'
             className={start ? 'card blue-grey darken-1' : !start && staff ? 'card blue-grey darken-1 card-opacity' : 'hide'}
@@ -22,8 +28,18 @@ const StaffSummary = ({setAlert, start, staff}) => {
 
             <div className="card-action">
                 <div className="summary__body summary__body-closing staff-list">
-                    {staffPerson && staffPerson.map(i => <StaffItem key={i.userName} {...i}/>)}
+                    {staffPerson && staffPerson.map(i => <StaffItem key={i.userName} {...i} />)}
                 </div>
+
+                <form className='mi-body'>
+                    <TextareaAutosize
+                        className='summary__area'
+                        value={title}
+                        name="miTitle"
+                        placeholder='Title'
+                        onChange={handelChange}
+                    />
+                </form>
             </div>
 
             <div className="txt-out__card-footer">

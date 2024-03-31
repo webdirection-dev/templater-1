@@ -1,4 +1,4 @@
-import {createSlice} from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     data: {
@@ -28,7 +28,7 @@ const closingSlice = createSlice({
     }
 })
 
-export const {resetOpening, setFinishTime, setDuration, setClosingDescription} = closingSlice.actions
+export const { resetOpening, setFinishTime, setDuration, setClosingDescription } = closingSlice.actions
 export const closingReducer = closingSlice.reducer
 
 //selectors

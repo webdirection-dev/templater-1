@@ -1,9 +1,10 @@
-import {createSlice} from '@reduxjs/toolkit'
-import {staffPerson} from '../../static/data/dataNotify'
+import { createSlice } from '@reduxjs/toolkit'
+import { staffPerson } from '../../static/data/dataNotify'
 
 const initialState = {
     data: {
         staffPerson,
+        title: '',
     }
 }
 
@@ -24,10 +25,14 @@ const staffSlice = createSlice({
             })
             state.data.staffPerson = out
         },
+
+        setTitle: (state, action) => {
+            state.data.title = action.payload
+        },
     }
 })
 
-export const {changeSelect} = staffSlice.actions
+export const { changeSelect, setTitle } = staffSlice.actions
 export const staffReducer = staffSlice.reducer
 
 //selectors

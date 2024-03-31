@@ -1,10 +1,10 @@
 import './mi.css'
 import TextareaAutosize from 'react-textarea-autosize'
-import {useMi} from './use-mi'
+import { useMi } from './use-mi'
 
-const Mi = ({setAlert, start, mi}) => {
-    const {stand, tg, priority, dev, support, miNumber, title, toGo, toDev, calls, handleChange, copySummary} = useMi()
-    return(
+const Mi = ({ setAlert, start, mi }) => {
+    const { stand, tg, priority, dev, support, miNumber, title, toGo, toDev, calls, handleChange, copySummary } = useMi()
+    return (
         <div
             id='mi'
             className={start ? 'card blue-grey darken-1' : !start && mi ? 'card blue-grey darken-1 card-opacity' : 'hide'}
@@ -69,7 +69,7 @@ const Mi = ({setAlert, start, mi}) => {
                     />
                 </form>
 
-                <div className="mi-sub-control" style={dev ? {justifyContent: 'space-between'} : undefined}>
+                <div className="mi-sub-control" style={dev ? { justifyContent: 'space-between' } : undefined}>
                     <div className="mi-desc">
                         <p className='mi-control mi-control-p'>Передан:</p>
                         <input
